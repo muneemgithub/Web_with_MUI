@@ -1,16 +1,13 @@
-import { AppBar, Box, Button, Link, Toolbar, Typography } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
+import { Box, Button, Link, Toolbar, Typography } from '@mui/material';
 import React from 'react';
-// import { Margin } from '@mui/icons-material';
-import logo from './assets/Logo.jpeg';
-import { green } from '@mui/material/colors';
+import logo from './assets/LOGO.png';
 
 
 function Header() {
-  return (
+  return ( 
    <>
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" color='white'>
+      <Box position="static" color='white'>
 
         <Toolbar sx={{display:"flex", justifyContent:"space-between"}}>
         <img className="w-50" src={logo} alt="" />
@@ -41,7 +38,7 @@ function Header() {
           <Button variant="body1" sx={{ backgroundColor: "green", color: "white"}} >Signup</Button>
           </Box>
         </Toolbar>
-      </AppBar>
+      </Box>
     </Box>
    </>
   )
